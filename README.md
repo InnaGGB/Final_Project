@@ -8,7 +8,7 @@ Target site: http://selenium1py.pythonanywhere.com/
 
 ## Stack
 
-- Python 3.12, pytest, Selenium 4
+- Python 3.13, pytest, Selenium 4
 - Page Object pattern (`pages/`: base, main, login, product, basket)
 - GitHub Actions: headless Chrome run on every push and pull request, plus a weekly scheduled run; the HTML report is attached to each run as an artifact
 
