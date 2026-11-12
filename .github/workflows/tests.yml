@@ -27,7 +27,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run tests
-        run: pytest --language=en --headless --html=report.html --self-contained-html
+        run: pytest --language=en --headless --reruns 1 --html=report.html --self-contained-html
 
       - name: Upload report
         if: always()

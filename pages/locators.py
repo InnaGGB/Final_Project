@@ -26,6 +26,7 @@ class ProductPageLocators:
     ADD_TO_CART_BUTTON = (By.CLASS_NAME, "btn-add-to-basket")
     ITEM_NAME = (By.CSS_SELECTOR, ".product_main>h1")
     ITEM_NAME_CHECK = (By.CSS_SELECTOR, "#messages .alert-success .alertinner strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages .alert-success")
     MSG = (By.CSS_SELECTOR, ".alertinner>strong:nth-child(1)")
     ITEM_PRICE = (By.CSS_SELECTOR, ".product_main>.price_color")
     ITEM_PRICE_MSG = (By.CSS_SELECTOR, ".alertinner>p>strong")
