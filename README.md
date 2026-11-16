@@ -32,6 +32,13 @@ test_*.py       tests
 .github/workflows/tests.yml   CI pipeline
 ```
 
-## Status
+## What's covered
 
-Work in progress: the remaining course tasks are being added step by step.
+- Main page: login link is visible, guest can open the login page, empty basket check
+- Product page: success message after adding to basket (positive and negative checks, with two known-failing checks marked `xfail`), login link, empty basket check
+- Registered user scenarios: a fresh user is registered in a `setup` fixture before each test
+- Tests are grouped with markers (`login_guest`, `need_review`), so a subset can be run with `pytest -m need_review`
+
+## Notes
+
+- The tests run against a public demo shop, so occasional slowness on the site can cause a failed run. CI retries a failed test once.
